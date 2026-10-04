@@ -1,0 +1,8 @@
+module.exports = (req, res) => {
+  res.status(200).json({
+    ok: true,
+    service: "ZXVCODE WEB",
+    runtime: "Vercel Serverless",
+    time: new Date().toISOString()
+  });
+};
