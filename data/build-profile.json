@@ -1,0 +1,24 @@
+{
+  "name": "ZXVCODE APK Builder",
+  "source": "X\u030co \u0181uild.zip",
+  "flutter": {
+    "projectZipRequired": true,
+    "requiredFile": "pubspec.yaml",
+    "modes": [
+      "debug",
+      "release"
+    ],
+    "analyzeOnly": true
+  },
+  "workflow": ".github/workflows/build.yml",
+  "webToApk": {
+    "enabled": true,
+    "workflow": ".github/workflows/web2apk.yml",
+    "inputs": [
+      "web_url",
+      "app_name",
+      "icon_url"
+    ]
+  },
+  "artifact": "GitHub Actions artifact"
+}
