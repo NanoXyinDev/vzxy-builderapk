@@ -1,0 +1,17 @@
+{
+  "name": "zxvcode-web",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "busboy": "1.6.0",
+    "unzipper": "0.12.5"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
