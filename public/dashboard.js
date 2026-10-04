@@ -1,3 +1,0 @@
-async function getMe(){const r=await fetch("/api/me");if(!r.ok){location.href="/login.html";return null}return (await r.json()).user}
-(async()=>{const u=await getMe();if(!u)return;document.querySelector("#hello").textContent=`Hello, ${u.name}.`;document.querySelector("#role").textContent=u.role.toUpperCase();document.querySelector("#email").textContent=u.email;if(u.role==="admin")document.querySelector("#adminLink").hidden=false})();
-document.querySelector("#logout").onclick=async()=>{await fetch("/api/auth?action=logout",{method:"POST"});location.href="/login.html"};
